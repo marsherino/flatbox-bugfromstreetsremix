@@ -8,7 +8,7 @@ There are two versions of this Flatbox fork: one based on the architecture of th
 
 Please see the READMEs for each version for instructions on component purchasing and assembly.
 
-Both controllers run on GP2040-CE firmware developed by the Open Stick Community (https://gp2040-ce.info/#/download) and use Kailh low profile Choc v1 keyboard switches for both movement and action buttons.
+Both controllers run on [GP2040-CE firmware](https://gp2040-ce.info/) developed by the Open Stick Community and use Kailh low profile Choc v1 keyboard switches for both movement and action buttons.
 
 Both controllers have five input modes: XInput, Nintendo Switch, PS3, PS4, and keyboard.
 
