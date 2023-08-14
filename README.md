@@ -1,4 +1,4 @@
-# Flatbox, Bug from Streets™ Remix: a low profile, low cost leverless arcade controller with thumb action button and simplified fourth row.
+# Flatbox, Bug from Streets™ Remix: a low profile, low cost leverless arcade controller with thumb action button and simplified fourth column.
 
 This repository contains 3D-printable models and the PCB design files needed to make an arcade controller that looks like this:
 
