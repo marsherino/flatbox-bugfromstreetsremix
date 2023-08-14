@@ -4,7 +4,7 @@ This repository contains 3D-printable models and the PCB design files needed to 
 
 [INSERT COMPLETED PICTURE HERE]
 
-There are two versions of this Flatbox fork: one based on the architecture of the Flatbox rev4 (embedded RP2040 chip), and the other based on the Flatbox rev5 (Waveshare RP2040-Zero), both by jfedor2. 
+There are two versions of this controller on this Flatbox fork: one based on the architecture of the Flatbox rev4 (embedded RP2040 chip), and the other based on the Flatbox rev5 (Waveshare RP2040-Zero), both by jfedor2. 
 
 Please see the READMEs for each version for instructions on component purchasing and assembly.
 
