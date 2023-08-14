@@ -10,12 +10,13 @@ Please see the READMEs for each version for instructions on component purchasing
 
 Both controllers run on GP2040-CE firmware developed by the Open Stick Community (https://gp2040-ce.info/#/download) and use Kailh low profile Choc v1 keyboard switches for both movement and action buttons.
 
-The table below lists their main features. See the README for each version for details on how to make them.
+Both controllers have five input modes: XInput, Nintendo Switch, PS3, PS4, and keyboard.
+
+The table below lists each version's specifications.
 
 version | [rev4] | [rev5]
 ------- | --------------------- | ---------------------
 case dimensions | 218x130x10mm | 218x126x10mm
-compatibility (using provided firmware) | PC, PS3, PS4 | PC, PS3, PS4
 chipset | embedded RP2040 | [RP2040-Zero](https://www.waveshare.com/rp2040-zero.htm)
 port | USB-C | USB-C
 SMT assembly required | yes | no
