@@ -1,3 +1,5 @@
-This is code for a USB arcade controller, meant to be used with RP2040-based boards.
+This controller runs on GP2040-CE firmware, maintained by the Open Stick Community.
 
-It works with Flatbox [rev4](../hardware-rev4) and [rev5](../hardware-rev5). Precompiled binaries are included.
+To find the latest firmware for these controllers, go to https://gp2040-ce.info/#/download and download the correct firmware for your controller model (either rev4 or rev5 variants).
+
+The Open Stick Community's Discord server is located at https://discord.gg/Rv3DcXuE32.
