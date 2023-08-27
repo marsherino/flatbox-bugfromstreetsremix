@@ -6,7 +6,7 @@ To make one unit you will need:
 
 * [3D printed case parts](3d-printed-case), a top and a bottom;
 * [The Flatbox PCB](pcb), ordered per the instructions below;
-* [A RP2040-Zero](https://www.waveshare.com/rp2040-zero.htm) making sure you get the option **without header**;
+* [A RP2040-Zero](https://www.waveshare.com/rp2040-zero.htm), making sure you get the option **without header**;
 * Twelve (12) [Kailh Choc v1 Low Profile switches](https://chosfox.com/collections/kailh-low-profile-switch-pg1350/products/kailh-low-profile-choc-switches) of your choice;
 * Twelve (12) [Kailh Choc PG1350 hotswap sockets](https://chosfox.com/products/kailh-choc-switch-1350-hot-swap-sockets?_pos=1&_sid=1d99bca9e&_ss=r), optional but highly recommended;
 * A set of [3D printed buttoncaps](../3d-printed-buttoncaps), nine (9) at 24mm size and three (3) at 30mm size;
@@ -36,27 +36,27 @@ Download the Gerber files included in this repository, click the blue button tha
 
 You can leave most of these settings at default, but for the sake of completeness, here are the settings I use:
 
-**Base Material**: FR-4 (default)
-**Layers**: 2
-**Dimensions**: auto-populated, do not adjust
-**PCB Quantity**: As many as you want, minimum of 5. Avoid ordering more than 50 boards in one order, because if you order more than 50, you won't be able to use Single PCB delivery format, which will require extra processing from you.
-**Product Type**: Industrial / Consumer Electronics
-**Different Design**: 1
-**Delivery Format**: Single PCB
-**PCB Thickness**: 1.6
-**PCB Color**: Up to you
-**Silkscreen**: This will auto-populate depending on your color choice; it will be White for every color except for a white board, which will then be Black
-**Surface Finish**: HASL (with lead) or LeadFree HASL
-**Outer Copper Weight**: 1 oz
-**Via Covering**: Tented
-**Board Outline Tolerance**: ±0.2mm (regular)
-**Confirm Production File**: Up to you. I recommend Yes here, because it will allow you to double-check the board to make sure everything's right before JLCPCB makes it for a minimal cost.
-**Remove Order Number**: Up to you; this is a cosmetic choice. JLCPCB will print the order number on your boards somewhere if you pick No. If you pick Yes, they won't, but the order will be slightly more expensive. I usually pick Yes.
-**Flying Probe Test**: Fully test
-**Gold Fingers**: No
-**Castellated Holes**: No
-**PCB Assembly**: No
-**Stencil**: No
+* **Base Material**: FR-4 (default)  
+* **Layers**: 2  
+* **Dimensions**: auto-populated, do not adjust  
+* **PCB Quantity**: As many as you want, minimum of 5. Avoid ordering more than 50 boards in one order, because if you order more than 50, you won't be able to use Single PCB delivery format, which will require extra processing from you.  
+* **Product Type**: Industrial / Consumer Electronics  
+* **Different Design**: 1  
+* **Delivery Format**: Single PCB  
+* **PCB Thickness**: 1.6  
+* **PCB Color**: Up to you  
+* **Silkscreen**: This will auto-populate depending on your color choice; it will be White for every color except for a white board, which will then be Black  
+* **Surface Finish**: HASL (with lead) or LeadFree HASL  
+* **Outer Copper Weight**: 1 oz  
+* **Via Covering**: Tented  
+* **Board Outline Tolerance**: ±0.2mm (regular)  
+* **Confirm Production File**: Up to you. I recommend Yes here, because it will allow you to double-check the board to make sure everything's right before JLCPCB makes it for a minimal cost.  
+* **Remove Order Number**: Up to you; this is a cosmetic choice. JLCPCB will print the order number on your boards somewhere if you pick No. If you pick Yes, they won't, but the order will be slightly more expensive. I usually pick Yes.  
+* **Flying Probe Test**: Fully test  
+* **Gold Fingers**: No  
+* **Castellated Holes**: No  
+* **PCB Assembly**: No  
+* **Stencil**: No  
 
 For reference, as of this writing (August 2023), 5 boards with the above settings costs about $16 USD before shipping. 50 boards will cost about $70 USD before shipping.
 
@@ -71,13 +71,15 @@ When soldering, make sure your workspace is clean and that you have adequate ven
 
 2. Tape down your board and preheat your soldering iron per the standards for your solder. For standard leaded, rosin-core solder (what I use and recommend), I tend to work at 350 to 360°C, but you can go higher depending on your preferences.
 
+![Taped board](images/20230827_taped-board.JPG)
+
 3. Align the RP2040-Zero. You want to make sure that all of the castellated pins on the board (the silver areas with the small holes) align with the pads on the PCB.
 
 ![aligned board](images/20230827_aligned-rp2040.JPG)
 
 4. Tape down the RP2040-Zero. You only need to leave a couple of pins at the bottom exposed for now - once those are soldered, the board will hold in place and you can remove the tape.
 
-![Taped board](images/20230827_taped-board.JPG)
+![taped rp2040](images/20230827_taped-rp2040)
 
 If you prefer, it's also possible to apply some solder to the pad in the top-left and in the bottom right, place the board, and heat up the solder to set the board. I prefer the tape to minimize the number of times I have to pass over the same pad.
 
@@ -177,7 +179,7 @@ At this point, even if you don't have a case, your Flatbox is capable of working
 
 7. While your board is still plugged in, test it to make sure everything works as expected. You can do this with a gamepad tester, like [GamepadTester.net](https://gamepadtester.net/), or you can open a game and test it in training mode. I tend to do both: check the inputs on the tester first, and then open Street Fighter 6 and test it there. In the SF6 control settings, Classic Inputs Custom 1 will set the 30mm right thumb button to Parry (MP+MK)  and the fourth column 30mm button to Drive Impact (HP+HK).
 
-8. If everything works, your board is ready to play!
+8. If everything works, your board is ready to play! If you have any trouble with the firmware, one troubleshooting step is to download the [Flash Nuke .uf2 file](https://raw.githubusercontent.com/OpenStickCommunity/GP2040-CE/main/docs/downloads/flash_nuke.uf2) from the GP2040-CE site, drag and drop it onto your PCB's memory drive (which will erase any firmware), and then re-drag and drop the Flatbox Rev5 firmware onto the drive.
 
 ## Attaching the case
 
