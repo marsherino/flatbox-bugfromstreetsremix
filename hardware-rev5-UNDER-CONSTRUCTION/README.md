@@ -71,13 +71,15 @@ When soldering, make sure your workspace is clean and that you have adequate ven
 
 2. Tape down your board and preheat your soldering iron per the standards for your solder. For standard leaded, rosin-core solder (what I use and recommend), I tend to work at 350 to 360°C, but you can go higher depending on your preferences.
 
+![Taped board](images/20230827_taped-board.JPG)
+
 3. Align the RP2040-Zero. You want to make sure that all of the castellated pins on the board (the silver areas with the small holes) align with the pads on the PCB.
 
 ![aligned board](images/20230827_aligned-rp2040.JPG)
 
 4. Tape down the RP2040-Zero. You only need to leave a couple of pins at the bottom exposed for now - once those are soldered, the board will hold in place and you can remove the tape.
 
-![Taped board](images/20230827_taped-board.JPG)
+![taped rp2040](images/20230827_taped-rp2040)
 
 If you prefer, it's also possible to apply some solder to the pad in the top-left and in the bottom right, place the board, and heat up the solder to set the board. I prefer the tape to minimize the number of times I have to pass over the same pad.
 
