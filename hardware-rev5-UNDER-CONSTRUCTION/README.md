@@ -1,6 +1,6 @@
 # Flatbox rev5
 
-This is rev5 of the Flatbox. In this version an [RP2040-Zero](https://www.waveshare.com/rp2040-zero.htm) board is soldered onto the main PCB. This eliminates the need for SMT / SMD Assembly, which reduces the per-board cost from your PCB supplier (I use JLCPCB) in exchange for requiring slightly more soldering work from you. This makes it ideal for hobbyists and small board runs in general.
+This is rev5 of the Flatbox. In this version a [RP2040-Zero](https://www.waveshare.com/rp2040-zero.htm) board is soldered onto the main PCB. This eliminates the need for SMT / SMD Assembly, which reduces the per-board cost from your PCB supplier (I use JLCPCB) in exchange for requiring slightly more soldering work from you. This makes it ideal for hobbyists and small board runs in general.
 
 To make one unit you will need:
 
