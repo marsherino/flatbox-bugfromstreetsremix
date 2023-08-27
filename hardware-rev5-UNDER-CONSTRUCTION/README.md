@@ -6,7 +6,7 @@ To make one unit you will need:
 
 * [3D printed case parts](3d-printed-case), a top and a bottom;
 * [The Flatbox PCB](pcb), ordered per the instructions below;
-* [A RP2040-Zero](https://www.waveshare.com/rp2040-zero.htm) making sure you get the option **without header**;
+* [A RP2040-Zero](https://www.waveshare.com/rp2040-zero.htm), making sure you get the option **without header**;
 * Twelve (12) [Kailh Choc v1 Low Profile switches](https://chosfox.com/collections/kailh-low-profile-switch-pg1350/products/kailh-low-profile-choc-switches) of your choice;
 * Twelve (12) [Kailh Choc PG1350 hotswap sockets](https://chosfox.com/products/kailh-choc-switch-1350-hot-swap-sockets?_pos=1&_sid=1d99bca9e&_ss=r), optional but highly recommended;
 * A set of [3D printed buttoncaps](../3d-printed-buttoncaps), nine (9) at 24mm size and three (3) at 30mm size;
@@ -177,7 +177,7 @@ At this point, even if you don't have a case, your Flatbox is capable of working
 
 7. While your board is still plugged in, test it to make sure everything works as expected. You can do this with a gamepad tester, like [GamepadTester.net](https://gamepadtester.net/), or you can open a game and test it in training mode. I tend to do both: check the inputs on the tester first, and then open Street Fighter 6 and test it there. In the SF6 control settings, Classic Inputs Custom 1 will set the 30mm right thumb button to Parry (MP+MK)  and the fourth column 30mm button to Drive Impact (HP+HK).
 
-8. If everything works, your board is ready to play!
+8. If everything works, your board is ready to play! If you have any trouble with the firmware, one troubleshooting step is to download the [Flash Nuke .uf2 file](https://raw.githubusercontent.com/OpenStickCommunity/GP2040-CE/main/docs/downloads/flash_nuke.uf2) from the GP2040-CE site, drag and drop it onto your PCB's memory drive (which will erase any firmware), and then re-drag and drop the Flatbox Rev5 firmware onto the drive.
 
 ## Attaching the case
 
