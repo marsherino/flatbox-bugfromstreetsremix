@@ -26,13 +26,13 @@ I order my boards from [JLCPCB](https://jlcpcb.com/).
 
 3. You will see the following page:
 
-![JLCPCB blank page](images\20230827_jlcpcb-blank.png)
+![JLCPCB blank page](images/20230827_jlcpcb-blank.png)
 
 Download the Gerber files included in this repository, click the blue button that reads "Add Gerber file," and upload the Gerber file. It will need to be a .zip or .rar file for JLC to accept it.
 
 4. You will then see the following page:
 
-![JLCPCB with Gerbers added](images\20230827_jlcpcb-gerbers.png)
+![JLCPCB with Gerbers added](images/20230827_jlcpcb-gerbers.png)
 
 You can leave most of these settings at default, but for the sake of completeness, here are the settings I use:
 
@@ -66,52 +66,52 @@ For reference, as of this writing (August 2023), 5 boards with the above setting
 
 1. Once you've received all your parts, set out your soldering workspace:
 
-![Soldering layout](images\20230827_soldering-workspace.JPG")
+![Soldering layout](images/20230827_soldering-workspace.JPG)
 When soldering, make sure your workspace is clean and that you have adequate ventilation - this can be as simple as opening a window and running a fan away from your workspace. For this project, it's easy to do all of the work on a flat surface, so I just use non-marking, low-adhesion tape like blue painter's tape to hold down the PCB while I'm working on it. When working with solder, **make absolutely sure** that you wash your hands before and after soldering; do not eat or place your hands near your eyes or mouth while working; and make sure you ground yourself (either by using an anti-static wristband or by touching a grounded metal object, like the screw in a lightswitch plate) before you handle electronics.
 
 2. Tape down your board and preheat your soldering iron per the standards for your solder. For standard leaded, rosin-core solder (what I use and recommend), I tend to work at 350 to 360°C, but you can go higher depending on your preferences.
 
 3. Align the RP2040-Zero. You want to make sure that all of the castellated pins on the board (the silver areas with the small holes) align with the pads on the PCB.
 
-![aligned board](20230827_aligned-rp2040.JPG)
+![aligned board](images/20230827_aligned-rp2040.JPG)
 
 4. Tape down the RP2040-Zero. You only need to leave a couple of pins at the bottom exposed for now - once those are soldered, the board will hold in place and you can remove the tape.
 
-![Taped board](images\20230827_taped-board.JPG)
+![Taped board](images/20230827_taped-board.JPG)
 
 If you prefer, it's also possible to apply some solder to the pad in the top-left and in the bottom right, place the board, and heat up the solder to set the board. I prefer the tape to minimize the number of times I have to pass over the same pad.
 
 5. Solder the bottom pins. To solder these, hold your preheated iron to the pin for a few (2-3) seconds, and then introduce the solder wire. 
 
-![soldering iron process](images\20230827_soldering-iron-process.JPG)
+![soldering iron process](images/20230827_soldering-iron-process.JPG)
 
 You don't need to use a lot of solder; your goal is just to make sure that there is solder touching both the pad on the PCB and the side of the pin on the board, without any solder crossing over to any other pin or pad to the left or right. Using rosin flux makes this process *significantly* easier. You can either buy rosin on its own or buy solder wire with a rosin core. I prefer the latter. You can use the tip of your iron to "paint" the solder so that it's contacting both the pin and the pad.
 
 When you're done with the bottom pins, it should look something like this:
 
-![bottom pins](images\20230827_bottom-pins-soldered.JPG)
+![bottom pins](images/20230827_bottom-pins-soldered.JPG)
 
 6. Remove the tape and solder the rest of the pins:
 
-![fully soldered rp2040](images\20230827_fully-soldered-rp2040.JPG)
+![fully soldered rp2040](images/20230827_fully-soldered-rp2040.JPG)
 
 Note that not all of the pins on the RP2040 are used in the layout of the Flatbox rev5, but I solder all of them for the sake of completeness and to better secure the board.
 
 7. Prepare to place the tact switches. The housing for the switch will have a longer side and a shorter side with a foot in each of the four corners. Line up the switches so that the long side is parallel to the side of the PCB. This will be obvious when you do it; there's only one way they fit into the through-holes.
 
-![tact switch placement](images\20230827_tact-switch-placement.JPG)
+![tact switch placement](images/20230827_tact-switch-placement.JPG)
 
 8. Push the legs of all six tact switches through the holes. Make sure that you push the legs *all* the way through the holes, or the tact switches won't sit right, and probably won't fit in the case. Make sure the housing is flat against the PCB, and on the bottom of the PCB, you can see the legs sticking through the holes:
 
-![tact switch legs](20230827_tact-switch-legs.JPG)
+![tact switch legs](images/20230827_tact-switch-legs.JPG)
 
 9. Flip to the back of the board and solder in the tact switches. You will probably have to move the tape around your board a bit to be able to access all of the through-holes, depending on where you put it. Your goal is to get a tiny cone of solder around each of the four legs on all six switches. To do that, like before, hold your iron next to the leg for two or three seconds to heat it, and then melt a small amount of solder wire onto the leg. It doesn't have to be very pretty. As long as there's solder around the leg, you're in good shape. It should look something like this:
 
-![soldered tact switches](images\20230827_soldered-tact-switches.JPG)
+![soldered tact switches](images/20230827_soldered-tact-switches.JPG)
 
 10. Place your hotswap sockets as pictured, aligning them within the footprints at the top of each switch location. **Be careful! Hotswap sockets are very light and easy to lose.** You will probably have to leave a couple off the board for the time being depending on the placement of your tape.
 
-![hotswap placement](images\20230827_hotswap-placement.JPG)
+![hotswap placement](images/20230827_hotswap-placement.JPG)
 
 *Note: If you're soldering your switches directly to the PCB, you'll use the other two holes on the switch footprint, which are through-holes and identifiable because there is metal around the circumference of the hole.*
 
@@ -119,33 +119,33 @@ Note that not all of the pins on the RP2040 are used in the layout of the Flatbo
 
 There are two ways to do this. The first is to repeat the standard process of holding your iron against the pin for two to three seconds to heat it up and then melting solder to connect the pin to the pad. The second is to melt solder onto the pad, place the hotswap socket, and *then* reintroduce your iron to liquefy the solder and bind the pin to the pad, like so:
 
-![solder on hotswap pad](images\20230827_solder-on-hotswap-pad.JPG)
+![solder on hotswap pad](images/20230827_solder-on-hotswap-pad.JPG)
 
 I'm agnostic between these two methods. I tend to do the first (just heating the pin), but find that I sometimes do need to apply the soldering pen to the area again because the socket fell out of position. Again, this doesn't need to be very pretty, nor do you need to use much solder. You just have to make sure there's solder on *both* the socket's pin and the PCB's pad. It'll look something like this:
 
-![hotswap one pad complete](images\20230827_hotswap-one-pad.JPG)
+![hotswap one pad complete](images/20230827_hotswap-one-pad.JPG)
 
 12. Solder the other pad of the socket.
 
 13. Repeat steps 11 and 12 until all twelve of the sockets are soldered:
 
-![soldered sockets](images\20230827_soldered-sockets.JPG)
+![soldered sockets](images/20230827_soldered-sockets.JPG)
 
 14. Congratulations! Your board is soldered.
 
-![soldered board](images\20230827_finished-soldered-board.JPG)
+![soldered board](images/20230827_finished-soldered-board.JPG)
 
 15. Wash your hands and collect your board and your Kailh Choc switches.
 
-![board with switches](images\20230827_board-with-switches.JPG)
+![board with switches](images/20230827_board-with-switches.JPG)
 
 16. Begin to place your switches. Make sure the metal pins on your switches are straight. Place your switch in the footprint, lining up the metal pins with the hotswap socket:
 
-![switch placement](images\20230827_switch-placement.JPG)
+![switch placement](images/20230827_switch-placement.JPG)
 
 17. Push the switch into the socket. If you find that your socket comes loose from the board when you do so, go back to your soldering station and reattach the socket, making sure that you have solder on *both* the pin and the pad. When a socket gets dislodged for me, it's usually because the solder didn't make contact with the pad.
 
-![switch in socket](images\20230827_switch-in-socket.JPG)
+![switch in socket](images/20230827_switch-in-socket.JPG)
 
 18. Repeat steps 16 and 17 until all of your switches are inserted. Congrats! At this point, your Flatbox PCB is assembled.
 
@@ -155,23 +155,23 @@ At this point, even if you don't have a case, your Flatbox is capable of working
 
 1. Plug a USB-C cable into your PCB, but do not plug it into a computer yet.
 
-![plugged-in PCB](images\20230827_plugged-in-pcb.JPG)
+![plugged-in PCB](images/20230827_plugged-in-pcb.JPG)
 
 2. Press and hold the BOOT button on the RP2040-Zero and, while holding the button, plug the other end of your cable into a computer. If you did it right, your computer should notify you that a drive called "RPI-RP2" has been connected. This is your PCB's memory.
 
-![rp2040 drive](images\20230827_rp2040-flash-drive.png)
+![rp2040 drive](images/20230827_rp2040-flash-drive.png)
 
 3. Go to the [GP2040-CE download page](https://gp2040-ce.info/#/download) and download the firmware for the Flatbox rev 5:
 
-![flatbox rev5 box](images\20230827_flatboxrev5-box.png)
+![flatbox rev5 box](images/20230827_flatboxrev5-box.png)
 
 4. Find the .uf2 file you just downloaded. It should have a file name that looks something like this:
 
-![uf2 file](images\20230827_uf2-file.png)
+![uf2 file](images/20230827_uf2-file.png)
 
 5. Drag and drop this .uf2 file onto the RPI-RP2 drive:
 
-![drag and drop](images\20230827_drag-and-drop_arrows.png)
+![drag and drop](images/20230827_drag-and-drop_arrows.png)
 
 6. Wait for about 15 seconds. On my computer, a progress chart will pop up while the file is copying, and when it's done, it closes this window and ejects the drive.
 
