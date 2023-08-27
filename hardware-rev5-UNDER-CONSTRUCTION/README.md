@@ -36,27 +36,27 @@ Download the Gerber files included in this repository, click the blue button tha
 
 You can leave most of these settings at default, but for the sake of completeness, here are the settings I use:
 
-**Base Material**: FR-4 (default)
-**Layers**: 2
-**Dimensions**: auto-populated, do not adjust
-**PCB Quantity**: As many as you want, minimum of 5. Avoid ordering more than 50 boards in one order, because if you order more than 50, you won't be able to use Single PCB delivery format, which will require extra processing from you.
-**Product Type**: Industrial / Consumer Electronics
-**Different Design**: 1
-**Delivery Format**: Single PCB
-**PCB Thickness**: 1.6
-**PCB Color**: Up to you
-**Silkscreen**: This will auto-populate depending on your color choice; it will be White for every color except for a white board, which will then be Black
-**Surface Finish**: HASL (with lead) or LeadFree HASL
-**Outer Copper Weight**: 1 oz
-**Via Covering**: Tented
-**Board Outline Tolerance**: ±0.2mm (regular)
-**Confirm Production File**: Up to you. I recommend Yes here, because it will allow you to double-check the board to make sure everything's right before JLCPCB makes it for a minimal cost.
-**Remove Order Number**: Up to you; this is a cosmetic choice. JLCPCB will print the order number on your boards somewhere if you pick No. If you pick Yes, they won't, but the order will be slightly more expensive. I usually pick Yes.
-**Flying Probe Test**: Fully test
-**Gold Fingers**: No
-**Castellated Holes**: No
-**PCB Assembly**: No
-**Stencil**: No
+* **Base Material**: FR-4 (default)
+* **Layers**: 2
+* **Dimensions**: auto-populated, do not adjust
+* **PCB Quantity**: As many as you want, minimum of 5. Avoid ordering more than 50 boards in one order, because if you order more than 50, you won't be able to use Single PCB delivery format, which will require extra processing from you.
+* **Product Type**: Industrial / Consumer Electronics
+* **Different Design**: 1
+* **Delivery Format**: Single PCB
+* **PCB Thickness**: 1.6
+* **PCB Color**: Up to you
+* **Silkscreen**: This will auto-populate depending on your color choice; it will be White for every color except for a white board, which will then be Black
+* **Surface Finish**: HASL (with lead) or LeadFree HASL
+* **Outer Copper Weight**: 1 oz
+* **Via Covering**: Tented
+* **Board Outline Tolerance**: ±0.2mm (regular)
+* **Confirm Production File**: Up to you. I recommend Yes here, because it will allow you to double-check the board to make sure everything's right before JLCPCB makes it for a minimal cost.
+* **Remove Order Number**: Up to you; this is a cosmetic choice. JLCPCB will print the order number on your boards somewhere if you pick No. If you pick Yes, they won't, but the order will be slightly more expensive. I usually pick Yes.
+* **Flying Probe Test**: Fully test
+* **Gold Fingers**: No
+* **Castellated Holes**: No
+* **PCB Assembly**: No
+* **Stencil**: No
 
 For reference, as of this writing (August 2023), 5 boards with the above settings costs about $16 USD before shipping. 50 boards will cost about $70 USD before shipping.
 
