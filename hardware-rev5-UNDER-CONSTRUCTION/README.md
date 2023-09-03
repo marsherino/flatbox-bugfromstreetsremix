@@ -12,7 +12,8 @@ To make one unit you will need:
 * A set of [3D printed buttoncaps](../3d-printed-buttoncaps), nine (9) at 24mm size and three (3) at 30mm size;
 * Six (6) [6x6x5mm tact switches](https://www.amazon.com/dp/B07VSNN9S2);
 * Seven (7) [M3x6mm flat head screws](https://www.amazon.com/dp/B01E5EOIWW);
-* Some kind of rubber feet or non-slip padding for the bottom; 
+* Some kind of rubber feet (6mm / 0.25 in preferred) or non-slip padding for the bottom;
+* A strong adhesive to attach the feet (I use epoxy)
 * Non-marking tape, like blue painter's tape; and
 * Soldering equipment.
 
@@ -183,15 +184,87 @@ At this point, even if you don't have a case, your Flatbox is capable of working
 
 ## Attaching the case
 
-**THIS SECTION UNDER CONSTRUCTION**
+You will need to get a [3D printed case](3d-printed-case) to proceed through this section, using the .stl files available in this repo.
 
+1. Get the bottom portion of your case, your rubber feet (if using), and your adhesive.
 
+![foot attachment prep](images/20230902_flatbox-case-with-feet-and-epoxy.JPG)
 
+2. Dispense your adhesive and, if necessary, mix it. 
 
+![ejecting epoxy](images/20230902_ejecting-epoxy.JPG)
 
+Epoxy ususally comes in two portions that need to be mixed together for the substance to set, for example. Follow the directions for your adhesive.
 
+![mixing epoxy](images/20230902_mixing-epoxy.JPG)
 
-I printed the case at 0.20mm layer height. The top part should be printed upside-down, the bottom part should be printed as-is. They don't require supports.
+3. Apply your adhesive to where you want your feet to go. I tend to place mine in the corners. Use a small, fine implement - I use a toothpick - to "paint" in the adhesive, ensuring you don't use too much, or it'll leak onto other parts of the case.
+
+![applying epoxy](images/20230902_applying-epoxy.JPG)
+
+4. Attach your feet, being careful to avoid adhesive leakage if possible and to clean any leaks promptly when necessary.
+
+5. If necessary, allow your adhesive to cure fully before proceeding. The epoxy I use takes about an hour to cure.
+
+![feet attached](images/20230902_feet-attached.JPG)
+
+6. Gather your completed PCB, your case, your button caps, your M3x6mm screws, and a compatible screwdriver.
+
+![pcb with case prep](images/20230902_case-attachment-prep.JPG)
+
+7. One by one, align your button caps with the openings of your switches. 
+
+![setting the button cap](images/20230902_setting-button-stem.JPG)
+
+Note that the 3D printed button caps used for this step (available on this repo) are *extremely* fragile and have a tendency to break at the stem. Be very careful pushing in the caps; use a light touch and make sure you have extras. 
+
+![stem detail](images/20230902_button-stem-detail.JPG)
+
+Push in the cap.
+
+![button inserted](images/20230902_one-button-placed.JPG)
+
+If a stem breaks inside of your switch, you can carefully remove it with a pair of tweezers. 
+
+![stem broken in switch](images/20230902_broken-stem_detail.jpg)
+
+Remember to only remove the caps with the board outside of the case, and to grab the rim and pull straight up. Attempting to wiggle the button cap out of the switch will cause it to break.
+
+Continue until all of your button caps are placed.
+
+![all caps placed](images/20230902_all-buttons-placed.JPG)
+
+8. Place the top of your case over the top of your board, lining up the mounting posts in the case with the mounting holes in the PCB.
+
+![aligning the front case](images/20230902_front-case-alignment.JPG)
+
+9. Place the bottom of your case so that the screw holes on the bottom line up with the mounting holes on the top. They should roughly click together, but will not snap together decisively.
+
+![beginning to insert the screws](images/20230902_screw-prep-back.JPG)
+
+10. Begin to place your screws. Do not fully tighten them; just screw them in enough for a light hold. 
+
+![screw detail](images/20230902_screw-detail.JPG)
+
+Criss-cross your case as you place them, as if you were tightening the bolts on a car wheel. 
+
+![crisscross the screws](images/20230902_crisscross-detail.JPG)
+
+If you printed your case out of PLA the machine screws recommended on this repo will be able to "bite" into the plastic on their own. Note that if you print out of a firmer material, you may need to use self-tapping screws. If you do, be careful to avoid punching through to the top of your case.
+
+![all screws inserted](images/20230902_completed-screw-back.JPG)
+
+11. When all of your screws are placed, begin to tighten them in. Keep a close eye on the flatness of the case as you do this. I find that if I tighten in all the screws all the way, some case flex inevitably gets introduced:
+
+![example case flex](images/20230902_case-flex.jpg)
+
+Tighen them only as much as possible without introducing any flex in the case.
+
+**Congratulations! Your Flatbox rev5 - Bug from Streets™ Remix is now complete and ready for anything.**
+
+![it is done](images/20230902_finished-flatbox.JPG)
+
+---
 
 PCB design licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
