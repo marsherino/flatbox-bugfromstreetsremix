@@ -81,7 +81,7 @@ When soldering, make sure your workspace is clean and that you have adequate ven
 
 4. Tape down the RP2040-Zero. You only need to leave a couple of pins at the bottom exposed for now - once those are soldered, the board will hold in place and you can remove the tape.
 
-![taped rp2040](images/20230827_taped-rp2040)
+![taped rp2040](images/20230827_taped-rp2040.JPG)
 
 If you prefer, it's also possible to apply some solder to the pad in the top-left and in the bottom right, place the board, and heat up the solder to set the board. I prefer the tape to minimize the number of times I have to pass over the same pad.
 
