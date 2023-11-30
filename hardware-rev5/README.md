@@ -183,6 +183,109 @@ At this point, even if you don't have a case, your Flatbox is capable of working
 
 8. If everything works, your board is ready to play! If you have any trouble with the firmware, one troubleshooting step is to download the [Flash Nuke .uf2 file](https://raw.githubusercontent.com/OpenStickCommunity/GP2040-CE/main/docs/downloads/flash_nuke.uf2) from the GP2040-CE site, drag and drop it onto your PCB's memory drive (which will erase any firmware), and then re-drag and drop the Flatbox Rev5 firmware onto the drive.
 
+## 3D Printing the case and buttons
+
+As everyone's 3D printers are different, this section will provide some general guidelines for printing the case and button caps. I print my cases on a Bambu Labs X1C through BambuSlicer, so my pictures will refer to that unit and that software. Feel free to adjust how you follow the following directions based on your own printer. If you don't have a 3D printer, look below for advice on how to obtain these parts.
+
+### Materials
+
+The Flatbox case and buttons can be safely printed in PLA. Note that cases printed in basic PLA have a tendency to warp; you can mitigate the risk of this somewhat by being careful with your settings. Printing the case with a brim, printing more slowly, and ensuring adequate airflow to your print bed can help. You can also print the case in different materials: Bambu's PLA-Tough and PLA-CF both work well, as do many forms of PLA+ filament, all of which can help reduce warping. PETG also works very well.
+
+### Printing orientation
+
+Both the case and buttons should be printed face-down, so the inside portions are the top layer:
+
+![case orientation](images/20231130_rev5-case-orientation.png)
+
+![button orientation](images/20231130_button-orientation.png)
+
+Printing this way accomplishes two things:
+
+1. You won't need supports, because any overhang is isolated to the top layers, and
+
+2. The face of your case and buttons will pick up any texture from your build plate.
+
+### The build plate
+
+I strongly recommend using a textured PEI build plate (rather than a smooth plate, like the Bambu Cool Plate) for printing these materials. Because the Flatbox case has a large contact area with your plate _and_ that surface is visible on the finished product, using a smooth plate significantly magnifies the risk of your print picking up surface imperfections from the plate itself, like glue stick markings, oil from your fingers, residue from previous prints, and the like. You can use a smooth plate if you're extremely thorough about cleaning your plate between every single print you do, ideally with a good dish soap and water. Moreover, smooth-printed buttons don't have a very pleasant feel. (I recommend a smooth plate only if you're printing with a transparent filament, or are very invested in the smooth finish / the visibility of your layer pattern.)
+
+Conversely, the textured plate offers a handful of advantages. Though you'll still want to be fairly careful with your plate--avoid touching the print surface with your fingers--the textured plate is much better at hiding residue from previous prints, and you generally won't need glue to help with bed adhesion, which removes one other source of surface imperfections. The textured plate also produces an aesthetically pleasing finish on the case and better feel on the buttons.
+
+### Print settings
+
+Because the Flatbox case is a wide and relatively stout print, anything you can do to strengthen the print will help produce a better finished product. I find that I get good prints with a **0.16mm layer height (though 0.2mm will also work)**. Printing with **3 or 4 walls**, approximately **4 each of top and bottom layers** and a **20% infill** helps give the case rigidity. 
+
+If you're printing with a transparent filament, you can adjust these values to something like **6 walls** and **5 each of top and bottom layers** and consequently drop the infill to **5 or 10%**, which will let you take advantage of the transparency more. You will still need some infill, or the parts of the case far from the walls (the open areas in the bottom left and right of the case) will cave in.
+
+### Calibrating the button stems
+
+Moreso than the case, printing the button caps can be a little fiddly because the stems have to be able to fit well into the openings on your Choc v1 switches. One way to deal with this is to make adjustments to your X-Y contour compensation (on BambuSlicer) or equivalent on your slicing software:
+
+![slicer software xy-compensation](images/20231130_xy-contour-compensation.png)
+
+One tactic I learned from Matt at [SGF Devices](https://sgfdevices.com/) for figuring out what compensation you need is to print a "calibration sheet" of four button caps, each object having -0.03 more X-Y contour compensation than previous, and test them in a switch every time you load a new filament:
+
+![dealing with the calibration sheet](images/20231130_calibration-plate-instructions.png)
+
+You're looking for the cap to fit snugly, but not too tightly, into your switch. If they're too big, they either won't fit into your switch, or if they do, they may become impossible to remove without breaking the cap. If they're too small they'll fall out of the switch. You want the switch to be able to hold the cap stem firmly, but you also want to be able to remove the cap if necessary. When you find your X-Y contour compensation value, write it on a piece of painter's tape and attach it to the side of your filament spool so you can remember for the future.
+
+That said, even taking every possible precaution, these button caps are inherently fragile and some will break if you try to remove them. Always remember to print out extra button caps of both sizes to have handy for when this happens. Alternately, you can follow the instructions below to obtain some nylon printed button caps from JLCPCB, which are exponentially sturdier than home-printed buttons.
+
+### Print timing
+
+On my printer with the above settings, I can print a sheet of three sets of buttons in about 1 hour and 45 minutes, and each half of the case in about two hours, for a total of **four hours** for the case and a little under **six hours** for all parts, not counting time spent removing objects and maintaining your build plate.
+
+## How to get a case if you don't have a 3D printer
+
+If you don't have your own 3D printer, you'll have to obtain a case and button caps some other way. By far the easiest way to do this is to buy your parts from someone who has a 3D printer. On the Open Stick Community discord, there are many creators who would be willing to sell you a high quality case and button caps for a reasonable price; you can also find makers on Etsy who will do the same (though it might be slightly more expensive after Etsy's fees.) I've found that the cost for printing these materials on ship-and-print commercial 3D printing services is far higher than you would spend with either of these other two options.
+
+### A note on public printers (libraries and makerspaces)
+
+Many people have successfully printed Flatbox parts on shared and publicly-accessible 3D printers, of the sort you'd find in a public library or in a local makerspace. If you're considering going this route, keep the following things in mind:
+
+1. Many public printers can be quite slow. The above printing times are those of a fast home printer, and it wouldn't be out of the ordinary for a different printer to take twice as long or longer to print the same parts.
+
+2. Likewise, public printers can print in wildly different qualities depending on how well they've been maintained. Many public printers have not been well maintained, and will print your parts badly. The Flatbox case is a demanding print with a large, flat surface area in a visible location that, ideally, needs to look good. It is not a functional print whose finish quality does not matter. Check with your source to make sure the printer has been well maintained, and if in doubt, see if you can do a quick test print to assess the quality of the bottom layer in particular. Be aware in any case that a print on a public or shared printer might not come out at the quality you expect.
+
+3. Finally, even if you find a well-maintained printer, be mindful of others. Because the print can take a long time, make sure you communicate the print length up-front to whomever is managing the printer and make sure it's OK to take up the printer for that period of time. If you're required to stay with the printer while it's printing, bring something to occupy yourself, and consider doing the three prints at different times to break up how long you're using the printer at once.
+
+### An alternate option for button caps (Nylon)
+
+One alternate option for getting a set of button caps is to have JLCPCB print you a set of caps in MJF Nylon. Even if you have a 3D printer, you might want to consider getting your button caps this way: these caps have great surface feel and, crucially, are *significantly* sturdier than home-printed button caps, being very unlikely to break. Note that, barring you spending a truly incredible amount of money, these only come in black. Here's how you can order some:
+
+1. Download the two .stls in the [MJF (Nylon) Button Sprues](3d-printed-case/buttons/MJF%20(Nylon)%20Button%20Sprues/) subfolder on this repo. Each of these is a "sprue," a connected set of eight button caps. **You'll need to get at least one of each sprue to have enough button caps to fill your device.**
+
+2. Log into JLCPCB, click "order now," and navigate to the "3D / CNC" option near the top.
+
+![JLCPCB 3D order page](images/20231130_jlcpcb-nylon-start-page.png)
+
+3. Upload one of the two .stl files to start by clicking on the blue "Add 3D Files" button.
+
+4. Select the following settings:
+
+* **3D Technology**: MJF (Nylon)
+* **Material**: PA12-HP Nylon. You _could_ select PAC-HP Nylon to get your buttons in a color other than black, but it'll cost an order of magnitude more than just choosing PA12-HP Nylon.
+* **Color**: Black. The "Natural Gray" color option doesn't look good, and assumes that you'll find some way to color them on your own.
+* **Surface Finish**: These will be filled by default with "Yes," "Dyeing," and "Dyed Black" and cannot be changed, assuming you've picked the above options.
+* **Build Time**: 72 hours (cannot be changed), assuming you've picked the above options.
+* **Quantity**: Up to you. You only need one of each sprue to have enough caps for one Flatbox plus several extras. If you print three of each sprue, you'll have enough caps for four Flatboxes exactly.
+* **Product Desc**: I usually pick "DIYEntertainment" > "Game Controller Enclosure -HS Code 950450."
+* **3D Remark**: Not necessary.
+
+5. Click "Save to Cart."
+
+6. Repeat the above steps for the other sprue.
+
+7. Click your cart, check out, and complete your order. For reference, as of this writing (November 2023), three sets of both sprues (total of six objects) cost me just under $30 USD shipped.
+
+8. Note that once you've sent in your order, it is very likely that JLCPCB will get in touch with you to tell you that the wall thickness of the sprue piece itself is below their 1.5mm minimum thickness, and ask if you'd like to proceed with the print anyway:
+
+![sprue thickness issue diagram](images/20231130_jlc-email-sprue-thickness.png)
+ 
+ You can safely tell them to proceed with the print as-is.
+
+Once you've gotten your case and button caps, you can proceed to installing your case.
+
 ## Installing the case
 
 You will need to get a [3D printed case](3d-printed-case) and a set of [button caps](3d-printed-case/buttons) to proceed through this section. The files for the case and buttons are available on this repo, though Flatbox button caps designed for Choc v1 switches obtained elsewhere should also work.
@@ -225,7 +328,7 @@ Push in the cap.
 
 ![button inserted](images/20230902_one-button-placed.JPG)
 
-If a stem breaks inside of your switch, you can carefully remove it with a pair of tweezers. 
+If a stem breaks inside of your switch, you can carefully remove by heating up a thin needle or thumbtack, pressing it into the broken stem, and pulling the stem out when your tool cools. 
 
 ![stem broken in switch](images/20230902_broken-stem_detail.jpg)
 
