@@ -10,7 +10,7 @@ To make one unit you will need:
 * Twelve (12) [Kailh Choc v1 Low Profile switches](https://chosfox.com/collections/kailh-low-profile-switch-pg1350/products/kailh-low-profile-choc-switches) of your choice;
 * Twelve (12) [Kailh Choc PG1350 hotswap sockets](https://chosfox.com/products/kailh-choc-switch-1350-hot-swap-sockets?_pos=1&_sid=1d99bca9e&_ss=r), optional but highly recommended;
 * A set of [3D printed buttoncaps](../3d-printed-buttoncaps), nine (9) at 24mm size and three (3) at 30mm size;
-* Six (6) [6x6x5mm tact switches](https://www.amazon.com/dp/B07VSNN9S2);
+* Six (6) [6x6x5mm tact switches](https://www.amazon.com/dp/B07VSNN9S2), noting that you'll need taller tact switches if you use another case design that uses either the plain stems or stem caps instead of integrated button tabs;
 * Seven (7) [M3x6mm flat head screws](https://www.amazon.com/dp/B01E5EOIWW);
 * Some kind of rubber feet (6mm / 0.25 in preferred) or non-slip padding for the bottom;
 * A strong adhesive to attach the feet (I use epoxy);
@@ -101,7 +101,7 @@ When you're done with the bottom pins, it should look something like this:
 
 Note that not all of the pins on the RP2040 are used in the layout of the Flatbox rev5, but I solder all of them for the sake of completeness and to better secure the board.
 
-7. Prepare to place the tact switches. The housing for the switch will have a longer side and a shorter side with a foot in each of the four corners. Line up the switches so that the long side is parallel to the side of the PCB. This will be obvious when you do it; there's only one way they fit into the through-holes.
+7. Prepare to place the tact switches. The housing for the switch will have a longer side and a shorter side with a foot in each of the four corners. Line up the switches so that the long side is parallel to the left or right side of the PCB. This will be obvious when you do it; there's only one way they fit into the through-holes.
 
 ![tact switch placement](images/20230827_tact-switch-placement.JPG)
 
