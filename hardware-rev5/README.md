@@ -10,7 +10,7 @@ To make one unit you will need:
 * Twelve (12) [Kailh Choc v1 Low Profile switches](https://chosfox.com/collections/kailh-low-profile-switch-pg1350/products/kailh-low-profile-choc-switches) of your choice;
 * Twelve (12) [Kailh Choc PG1350 hotswap sockets](https://chosfox.com/products/kailh-choc-switch-1350-hot-swap-sockets?_pos=1&_sid=1d99bca9e&_ss=r), optional but highly recommended;
 * A set of [3D printed buttoncaps](../3d-printed-buttoncaps), nine (9) at 24mm size and three (3) at 30mm size;
-* Six (6) [6x6x5mm tact switches](https://www.amazon.com/dp/B07VSNN9S2), noting that you'll need taller tact switches if you use another case design that uses either the plain stems or stem caps instead of integrated button tabs;
+* Six (6) [6x6x5mm tact switches](https://www.amazon.com/dp/B07VSNN9S2), noting that you'll need tact switches with longer stems if you use another case design that uses either the plain stems or stem caps instead of integrated button tabs;
 * Seven (7) [M3x6mm flat head screws](https://www.amazon.com/dp/B01E5EOIWW);
 * Some kind of rubber feet (6mm / 0.25 in preferred) or non-slip padding for the bottom;
 * A strong adhesive to attach the feet (I use epoxy);
